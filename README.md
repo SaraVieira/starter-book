@@ -27,6 +27,10 @@ git clone git@github.com:SaraVieira/gatsby-starter-book.git my-book && cd my-boo
 
 I built this in order to be able to publish a book I wrote and I think it may be useful for someone so I made it OSS.
 
+## Where can I edit the syntax highlight theme?
+
+You can change it in the [`pages/index.js`](https://github.com/SaraVieira/gatsby-starter-book/blob/master/src/pages/index.js#L15)
+
 ## Why not a theme?
 
 I want you to be able to edit everything as it will be your book so I think this workflow makes sense
