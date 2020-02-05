@@ -1,6 +1,7 @@
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -787,6 +788,7 @@ aside {
   max-height: 100%;
   padding: 50px;
   padding-top: 100px;
+  height: 100%;
 }
 
 aside li {
@@ -811,7 +813,6 @@ aside > ul > li > ul {
   border: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   cursor: pointer;
   position: fixed;
   top: 18px;
@@ -846,6 +847,11 @@ pre,
 samp {
   font-family: "Fira Code", monospace;
   font-size: 1em;
+}
+
+pre {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 .wrapper {

@@ -10,7 +10,6 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script src="https://unpkg.com/prismjs@1.17.1/prism.js" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

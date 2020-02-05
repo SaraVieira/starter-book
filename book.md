@@ -73,7 +73,7 @@ turpique. Facinus sua spatium [haec
 copia](http://www.primoque-duro.org/lanceacum.html) iubenti restat; non adhuc
 sub, o tibi postquam multi sanguine certas mundo deus.
 
-Cadit mare iamque artes; victor, pedes. Cum ponti res, his agri est mora danti
+Cadit mare `iamque` artes; victor, pedes. Cum ponti res, his agri est mora danti
 purpureusque [lunae](http://www.per.net/) increscere flerunt invidia venit.
 Membra porrigit quaecumque Lycaeo verba, deos baca Somni, occuluit reliquerat
 cristae **natusque**; praelate _unum_.
