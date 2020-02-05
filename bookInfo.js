@@ -1,8 +1,8 @@
 module.exports = {
-  title: "Opinionated guide to React",
-  author: "Sara Vieira",
-  subject: "It Depends",
-  keywords: ["javascript", "react"],
+  title: "My Book",
+  author: "Jane Doe",
+  subject: "Good Book",
+  keywords: ["things", "stuff"],
   // relative to the generate-book directory
   cover: "../static/cover.png",
   localURL: "http://localhost:8000",
