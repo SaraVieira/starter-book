@@ -12,8 +12,8 @@ import "prismjs/components/prism-graphql";
 import "prismjs/components/prism-tsx";
 import "prismjs/components/prism-json";
 import "prism-theme-night-owl";
-// import "./../styles/vs-light-theme.css";
-import "./../styles/dank-mono.css";
+// Use any from here: https://www.npmjs.com/package/prism-themes
+// import "prism-themes/themes/prism-vs.css";
 import "./../styles/style.css";
 import {
   headingRenderer,
