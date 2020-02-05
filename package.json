@@ -60,6 +60,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "build": "npm run build:book && npm run build:book"
+    "build": "npm run build:book && npm run build:site"
   }
 }

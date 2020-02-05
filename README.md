@@ -5,6 +5,10 @@ A gatsby starter focused on simplicity to help you create books.
 - 📖 Create Book from markdown files
 - 🖼 Generate PDF and Epub
 
+[PDF Example](./book/book.pdf)
+
+[Epub Example](./book/book.epub)
+
 ## How to use
 
 1. First git clone and cd into the folder
