@@ -1,5 +1,11 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 html {
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
