@@ -1,0 +1,7 @@
+[build]
+  functions = "functions"
+  command = "yarn build:site"
+  publish = "public"
+
+[dev]
+  autoLaunch = false

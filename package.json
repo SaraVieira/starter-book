@@ -8,6 +8,8 @@
     "url": "https://github.com/SaraVieira/gatsby-starter-book/issues"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.0.0-beta.5",
+    "@stripe/stripe-js": "^1.0.0-beta.5",
     "firacode": "^2.0.0",
     "framer-motion": "1.8.4",
     "gatsby": "2.19.12",
@@ -33,6 +35,7 @@
     "react-helmet": "5.2.1",
     "react-markdown": "4.3.1",
     "rehype-react": "4.0.1",
+    "stripe": "^8.14.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
