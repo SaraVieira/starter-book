@@ -1,6 +1,6 @@
 [build]
   functions = "functions"
-  command = "yarn build"
+  command = "yarn build:site"
   publish = "public"
 
 [dev]
