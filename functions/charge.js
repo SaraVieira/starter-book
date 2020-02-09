@@ -1,14 +1,15 @@
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const info = require("../bookInfo");
 
 exports.handler = async (event, context) => {
   try {
     const body = JSON.parse(event.body);
 
     await stripe.charges.create({
-      amount: "9900", // "9900" --> $99.00
+      amount: info.price * 100, // "9900" --> $99.00
       currency: "usd",
       source: body.source,
-      description: "My great book"
+      description: info.title
     });
 
     return {

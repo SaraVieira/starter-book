@@ -17,6 +17,7 @@
     "gatsby-plugin-manifest": "2.2.41",
     "gatsby-plugin-no-javascript": "2.0.5",
     "gatsby-plugin-offline": "3.0.34",
+    "gatsby-plugin-postcss": "^2.1.20",
     "gatsby-plugin-react-helmet": "3.1.22",
     "gatsby-plugin-sharp": "2.4.5",
     "gatsby-remark-copy-linked-files": "2.1.37",
@@ -36,6 +37,7 @@
     "react-markdown": "4.3.1",
     "rehype-react": "4.0.1",
     "stripe": "^8.14.0",
+    "tailwindcss": "^1.2.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
