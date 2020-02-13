@@ -1,5 +1,4 @@
 const stripe = require("stripe")("sk_test_JKHpUM2h5n1ieuqUosguuRX200fpwwisSa");
-const info = require("../bookInfo");
 
 exports.handler = async event => {
   try {
