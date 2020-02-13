@@ -5,7 +5,7 @@ exports.handler = async event => {
     const body = JSON.parse(event.body);
 
     const costumers = await stripe.customers.list({
-      limit: 3,
+      limit: 1,
       email: body.email
     });
     if (costumers.data.length) {

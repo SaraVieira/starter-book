@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 
 const DownloadPage = ({ location }) => {
   const user = (location.state || {}).email;
