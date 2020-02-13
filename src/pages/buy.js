@@ -24,7 +24,7 @@ const BuyPage = () => {
       return;
     }
     try {
-      await fetch("/.netlify/functions/charge", {
+      const data = await fetch("/.netlify/functions/charge", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -32,7 +32,6 @@ const BuyPage = () => {
         body: JSON.stringify({ source: token.id, name, email })
       }).then(response => response.json());
       setLoading(false);
-
       navigate("/download", { state: { email } });
     } catch (e) {
       setLoading(false);

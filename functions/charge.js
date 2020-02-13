@@ -12,10 +12,10 @@ exports.handler = async event => {
     });
 
     await stripe.charges.create({
-      amount: info.price * 100, // "9900" --> 99
+      amount: 4.99 * 100, // "9900" --> 99
       currency: "usd",
       customer: customer.id,
-      description: info.title
+      description: "My Book"
     });
 
     return {
