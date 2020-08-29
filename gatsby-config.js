@@ -6,15 +6,15 @@ module.exports = {
     author: info.author,
     description: info.subject,
     siteUrl: info.siteUrl,
-    social: info.social
+    social: info.social,
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/book.md`,
-        name: `book`
-      }
+        name: `book`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -24,20 +24,20 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590
-            }
+              maxWidth: 590,
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`
-            }
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`
-        ]
-      }
+          `gatsby-remark-smartypants`,
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -45,7 +45,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -54,11 +54,10 @@ module.exports = {
         start_url: `/`,
         background_color: info.PWA.backgroundColor,
         theme_color: info.PWA.themeColor,
-        display: `minimal-ui`
-      }
+        display: `minimal-ui`,
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-no-javascript"
-  ]
+  ],
 };
