@@ -13,7 +13,7 @@ A gatsby starter focused on simplicity to help you create books.
 
 [Epub Example](./book/book.epub)
 
-[Website Example](https://wizardly-snyder-c98440.netlify.com/)
+[Website Example](https://wizardly-snyder-c98440.netlify.com/) (add `?theme=dark` to preview dark version)
 
 ## How to use
 
