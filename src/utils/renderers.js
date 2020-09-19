@@ -9,17 +9,17 @@ const sidebar = {
     transition: {
       type: "spring",
       stiffness: 20,
-      restDelta: 2
-    }
+      restDelta: 2,
+    },
   }),
   closed: {
     clipPath: "circle(30px at 40px 40px)",
     transition: {
       type: "spring",
       stiffness: 400,
-      damping: 40
-    }
-  }
+      damping: 40,
+    },
+  },
 };
 
 const flatten = (text, child) => {
@@ -53,7 +53,7 @@ export const RootRenderer = ({ children }) => {
 
   const variants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" }
+    closed: { opacity: 0, x: "-100%" },
   };
 
   return (
@@ -63,7 +63,7 @@ export const RootRenderer = ({ children }) => {
         animate={open ? "open" : "closed"}
         variants={sidebar}
       />
-      <MenuToggle toggle={() => setOpen(o => !o)} />
+      <MenuToggle toggle={() => setOpen((o) => !o)} />
       <motion.aside
         variants={variants}
         animate={open ? "open" : "closed"}

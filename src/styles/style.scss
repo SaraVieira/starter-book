@@ -868,6 +868,132 @@ pre {
   margin-top: 0;
 }
 
+blockquote {
+  margin-left: 0;
+  border-left: 0.32813rem solid hsla(0, 0%, 0%, 0.25);
+}
+
+:not(pre) > code {
+  font-size: 0.95em;
+  color: white !important;
+  background: hsl(207deg, 35%, 35%) !important;
+  padding: 0.25ch 0.5ch;
+  border-radius: 2px;
+}
+
+header + main > ul {
+  display: none;
+}
+
+html * {
+  -webkit-print-color-adjust: exact;
+}
+
+ul {
+  margin-left: 1.75rem;
+}
+
+#table-of-contents {
+  display: none;
+
+  & + ul {
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      box-shadow: none;
+    }
+  }
+
+  & + ul li,
+  & + ul {
+    list-style: none;
+  }
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+
+a {
+  color: #385b73;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+aside {
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  max-height: 100%;
+  padding: 50px;
+  padding-top: 100px;
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    display: none;
+  }
+
+  > ul {
+    display: block;
+    margin: 0;
+
+    > li > ul {
+      display: block;
+    }
+  }
+}
+
+.menu-toggle {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: fixed;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 3;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+
+.alert {
+  padding: 10px;
+  background: #1a1a1a;
+  color: white;
+  margin-bottom: 40px;
+  font-family: Montserrat, sans-serif;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "mono_lisaregular", monospace;
+  font-size: 1em;
+  white-space: pre-wrap;
+}
+
 @media screen {
   .toc {
     display: none;
@@ -875,7 +1001,12 @@ pre {
 }
 
 @media print {
+  h1 {
+    page-break-before: always;
+  }
+
   .menu-toggle,
+  .background,
   .title,
   .alert {
     display: none;
@@ -885,8 +1016,51 @@ pre {
     margin-bottom: 60px;
   }
 
-  pre,
+  .toc a {
+    color: hsla(0, 0%, 0%, 0.9);
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  .toc:before {
+    content: "Table of Contents";
+    margin-bottom: 1.75rem;
+    display: block;
+    color: inherit;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .toc > ul {
+    list-style-type: none;
+  }
+
   .toc {
     page-break-inside: avoid;
+  }
+}
+
+.dark {
+  color: rgb(245, 250, 255);
+  background: rgb(32, 40, 51);
+
+  .toc a {
+    color: rgb(245, 250, 255);
+  }
+
+  a {
+    color: rgb(102, 184, 255);
+  }
+
+  blockquote {
+    color: #fbededcc;
+    border-left: 0.32813rem solid #fbededcc;
+  }
+
+  :not(pre) > code {
+    background: #0b1e3c !important;
   }
 }

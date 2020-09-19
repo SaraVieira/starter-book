@@ -14,13 +14,23 @@ import "prismjs/components/prism-json";
 import "prism-theme-night-owl";
 // Use any from here: https://www.npmjs.com/package/prism-themes
 // import "prism-themes/themes/prism-vs.css";
-import "./../styles/style.css";
+import "./../styles/style.scss";
 import {
   headingRenderer,
   RootRenderer,
-  SmallRootRenderer
+  SmallRootRenderer,
 } from "../utils/renderers";
 import info from "../../bookInfo";
+
+if (typeof window !== "undefined") {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const theme = urlParams.get("theme");
+
+  if (theme === "dark") {
+    document.getElementsByTagName("body")[0].classList += "dark";
+  }
+}
 
 function codeBlock({ value, language }) {
   if (!value) return null;
@@ -45,7 +55,7 @@ const Index = ({ data, location }) => {
       : {
           code: codeBlock,
           heading: headingRenderer,
-          root: RootRenderer
+          root: RootRenderer,
         };
 
   return (

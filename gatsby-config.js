@@ -16,6 +16,7 @@ module.exports = {
         name: `book`,
       },
     },
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
