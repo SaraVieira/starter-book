@@ -1,6 +1,6 @@
 # Book Starter
 
-A gatsby starter focused on simplicity to help you create books.
+A starter built with gatsby to help you create books with ease.
 
 - 📖 Create Book from markdown files
 - 🖼 Generate PDF with Light and Dark Mode
@@ -20,7 +20,7 @@ A gatsby starter focused on simplicity to help you create books.
 1. First git clone and cd into the folder
 
 ```bash
-git clone git@github.com:SaraVieira/gatsby-starter-book.git my-book && cd my-book
+git clone git@github.com:SaraVieira/starter-book.git my-book && cd my-book
 ```
 
 2. Edit your book in the `book.md`
