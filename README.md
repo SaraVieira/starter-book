@@ -1,10 +1,10 @@
-# Gatsby Starter Book
+# Book Starter
 
 A gatsby starter focused on simplicity to help you create books.
 
 - 📖 Create Book from markdown files
 - 🖼 Generate PDF with Light and Dark Mode
-- 📚 Generates Epub
+- 📚 Generates Epub file
 - 👩‍💻 Creates a preview site
 
 [PDF Light Example](./book/book-light.pdf)
@@ -29,7 +29,7 @@ git clone git@github.com:SaraVieira/gatsby-starter-book.git my-book && cd my-boo
 
    4.1. You can also run `yarn build:site` to build just the preview site
 
-   4.2. Or run `yarn build:book` for the PDF and Mobi files
+   4.2. Or run `yarn build:book` for the PDF and Epub files
 
 5. To get the .mobi file download the [Kindle Previewer](https://kdp.amazon.com/en_US/help/topic/G202131170) and drag your .epub file and it creates a kindle compatible file.
 6. Profit??
@@ -38,7 +38,7 @@ git clone git@github.com:SaraVieira/gatsby-starter-book.git my-book && cd my-boo
 
 ### How can I edit the CSS?
 
-The CSS is located in [./src/styles/styles.scss](./src/styles/styles.scss) and you can edit it there. At the bottom you will see all the styles specific for the dark version.
+The CSS is located in [./src/styles/style.scss](./src/styles/style.scss) and you can edit it there. At the bottom you will see all the styles specific for the dark version.
 
 ### How can I change the Prism theme?
 
@@ -47,7 +47,7 @@ I import the prism theme in [./src/pages/index.js](./src/pages/index.js) and in 
 ### The chapters are screwed up in my version
 
 I use a really HUUUUGE hack to get them, I go through every H1 created by the markdown file and make that into a chapter so I can only recognize H1's as chapters at least until I find a better way :(
-If you want to try and fix that the code is at [./src/generate-book/epub.js](./src/generate-book/epub.js).
+If you want to try and fix that the code is at [./generate-book/epub.js](./generate-book/epub.js).
 
 ## Why?
 
