@@ -85,6 +85,13 @@ small {
   font-size: 80%;
 }
 
+figcaption {
+  color: rgba(0, 0, 0, 0.59);
+  text-align: center;
+  font-size: 80%;
+  padding-top: 5px;
+}
+
 sub,
 sup {
   font-size: 75%;
@@ -1053,6 +1060,10 @@ samp {
 
   a {
     color: rgb(102, 184, 255);
+  }
+
+  figcaption {
+    color: #fbededcc;
   }
 
   blockquote {

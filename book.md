@@ -29,6 +29,8 @@ Tmolus delphines.
 
 ## Demittit primordia lacrimarum ire ausus Astraea
 
+![sup](https://i.imgur.com/eAc9ADE.jpg)
+
 Erit nisi neque, Bacchus **seque**. Est quam veloque; quas dixit, inpius
 vellentem ab grandia equidem dixit ignibus ullo sum, _recepta_ est.
 
@@ -90,16 +92,16 @@ function reducer(state, action) {
   switch (action.type) {
     case "toggleVisited":
       return {
-        airports: state.airports.map(airport => {
+        airports: state.airports.map((airport) => {
           if (airport.id === action.value) {
             return {
               ...airport,
-              visited: !airport.visited
+              visited: !airport.visited,
             };
           }
 
           return airport;
-        })
+        }),
       };
     default:
       return state;
@@ -108,7 +110,7 @@ function reducer(state, action) {
 
 export default ({ children }) => {
   const [state, dispatch] = useReducer(reducer, {
-    airports: airportList
+    airports: airportList,
   });
 
   return (

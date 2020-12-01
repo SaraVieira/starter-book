@@ -16,6 +16,7 @@ import "prism-theme-night-owl";
 // import "prism-themes/themes/prism-vs.css";
 import "./../styles/style.scss";
 import {
+  imageRenderer,
   headingRenderer,
   RootRenderer,
   SmallRootRenderer,
@@ -51,11 +52,16 @@ const Index = ({ data, location }) => {
   const markdownBook = data.markdownRemark;
   const renderers =
     process.env.GATSBY_SCRAPPER === "1"
-      ? { heading: headingRenderer, root: SmallRootRenderer }
+      ? {
+          heading: headingRenderer,
+          root: SmallRootRenderer,
+          image: imageRenderer,
+        }
       : {
           code: codeBlock,
           heading: headingRenderer,
           root: RootRenderer,
+          image: imageRenderer,
         };
 
   return (

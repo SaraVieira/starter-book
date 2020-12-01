@@ -35,6 +35,15 @@ export const headingRenderer = ({ children: reactChildren, level }) => {
   return React.createElement("h" + level, { id: slug }, children);
 };
 
+export const imageRenderer = (props) => {
+  return (
+    <figure>
+      <img src={props.src} alt={props.alt} />
+      <figcaption>{props.alt}</figcaption>
+    </figure>
+  );
+};
+
 export const RootRenderer = ({ children }) => {
   const [open, setOpen] = useState(false);
   const TOCLines = children.reduce((acc, { key, props }) => {
