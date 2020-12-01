@@ -29,8 +29,6 @@ Tmolus delphines.
 
 ## Demittit primordia lacrimarum ire ausus Astraea
 
-![sup](https://i.imgur.com/eAc9ADE.jpg)
-
 Erit nisi neque, Bacchus **seque**. Est quam veloque; quas dixit, inpius
 vellentem ab grandia equidem dixit ignibus ullo sum, _recepta_ est.
 
