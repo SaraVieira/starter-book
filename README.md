@@ -57,6 +57,7 @@ I built this in order to be able to publish a book I wrote and I think it may be
 ## Books using this:
 
 - [Opinionated Guide to React](http://opinionatedreact.com/)
+- [Express API Validation Essentials](https://expressapivalidation.com/)
 
 Let me know if you are using this to make your book :)
 
