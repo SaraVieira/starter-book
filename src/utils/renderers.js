@@ -35,6 +35,16 @@ export const headingRenderer = ({ children: reactChildren, level }) => {
   return React.createElement("h" + level, { id: slug }, children);
 };
 
+export const absoluteImageRenderer = ({ src, alt }) => {
+  src = src.replace("./", "http://localhost:9000/")
+  return (
+    <figure>
+      <img src={src} alt={alt} />
+      <figcaption>{alt}</figcaption>
+    </figure>
+  );
+}
+
 export const imageRenderer = (props) => {
   return (
     <figure>
