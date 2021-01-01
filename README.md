@@ -50,6 +50,16 @@ I import the prism theme in [./src/pages/index.js](./src/pages/index.js) and in 
 I use a really HUUUUGE hack to get them, I go through every H1 created by the markdown file and make that into a chapter so I can only recognize H1's as chapters at least until I find a better way :(
 If you want to try and fix that the code is at [./generate-book/epub.js](./generate-book/epub.js).
 
+## How can I add o outline items to the PDF?
+
+I could not find a way to do this with code so I ended up buying a software called [PDFOutliner](https://www.onekerato.com/pdfoutliner.html) but this is far from perfect as it's a Mac only app so any help would be super appreciated.
+
+To use the software open it up in your mac, click open and locate the PDF version of the book and after that you click on "Auto TOC"
+
+![PDFOutliner UI](./readme-images/1.png)
+
+Once created save the file and you should have a new Outline created.
+
 ## Why?
 
 I built this in order to be able to publish a book I wrote and I think it may be useful for someone so I made it open source.
