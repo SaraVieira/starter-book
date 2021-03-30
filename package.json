@@ -1,71 +1,19 @@
 {
   "name": "gatsby-starter-book",
-  "private": true,
-  "description": "A starter for a book powered by Markdown",
-  "version": "0.1.0",
-  "author": "Sara Vieira",
+  "version": "1.0.0",
+  "description": "A starter built with gatsby to help you create books with ease.",
+  "main": "index.js",
+  "scripts": {
+    "start": "docsify serve ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraVieira/starter-book"
+  },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SaraVieira/gatsby-starter-book/issues"
   },
-  "dependencies": {
-    "firacode": "^2.0.0",
-    "framer-motion": "1.8.4",
-    "gatsby": "2.19.12",
-    "gatsby-plugin-google-analytics": "2.1.35",
-    "gatsby-plugin-manifest": "2.2.41",
-    "gatsby-plugin-no-javascript": "2.0.5",
-    "gatsby-plugin-offline": "3.0.34",
-    "gatsby-plugin-react-helmet": "3.1.22",
-    "gatsby-plugin-sass": "^2.3.13",
-    "gatsby-plugin-sharp": "2.4.5",
-    "gatsby-remark-copy-linked-files": "2.1.37",
-    "gatsby-remark-images": "3.1.44",
-    "gatsby-remark-prismjs": "3.3.31",
-    "gatsby-remark-responsive-iframe": "2.2.32",
-    "gatsby-remark-smartypants": "2.1.21",
-    "gatsby-source-filesystem": "2.1.48",
-    "gatsby-transformer-remark": "2.6.50",
-    "gatsby-transformer-sharp": "2.3.14",
-    "node-sass": "^4.14.1",
-    "prism-theme-night-owl": "1.2.0",
-    "prism-themes": "^1.3.0",
-    "prismjs": "1.19.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-helmet": "5.2.1",
-    "react-markdown": "4.3.1",
-    "rehype-react": "4.0.1",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
-  },
-  "devDependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "epub-gen": "0.1.0",
-    "eslint": "^7.9.0",
-    "eslint-plugin-react": "^7.20.6",
-    "pdf-lib": "1.3.1",
-    "prettier": "^2.1.1",
-    "puppeteer": "2.1.1"
-  },
-  "homepage": "https://github.com/SaraVieira/gatsby-starter-book#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SaraVieira/gatsby-starter-book.git"
-  },
-  "scripts": {
-    "build:site": "gatsby build",
-    "build:book": "node generate-book/pdf.js && GATSBY_SCRAPPER=1 gatsby build && node generate-book/epub.js",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint": "eslint .",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "build": "npm run build:book && npm run build:site"
-  }
+  "homepage": "https://github.com/SaraVieira/gatsby-starter-book#readme"
 }
