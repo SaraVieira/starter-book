@@ -1,16 +1,16 @@
 > These instructions assume you have [Node](https://nodejs.org) installed in your computer
 
-- First git clone and cd into the folder
+- First `git clone` and move into the new folder
 
 ```bash
 git clone git@github.com:SaraVieira/starter-book.git my-book && cd my-book
 ```
 
-2. Edit your book in the `book.md`
+- Edit your book in the `book.md`
 
-   All major semantic elements are supported including code blocks with syntax highlighting. Please refer to [the Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you have any doubts about markdown
+  All major semantic elements are supported including code blocks with syntax highlighting. Please refer to [the Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you have any doubts about markdown.
 
-3. Set you book information in `bookInfo.js`. This includes screenshots, your name, the cover and a lot more.
+- Set you book information in `bookInfo.js`. This includes screenshots, your name, the cover and a lot more.
 
 This is the default data stored in that file:
 
@@ -24,9 +24,11 @@ module.exports = {
   cover: "../static/cover.png",
   localURL: "http://localhost:8000",
   siteUrl: "http://localhost:8000",
+  // here you can place your social links
   social: {
     twitter: "test",
   },
+  // Each book website is automatically as progressive web app and this allows you to change the colors
   PWA: {
     backgroundColor: `#ffffff`,
     themeColor: `#663399`,
@@ -34,12 +36,16 @@ module.exports = {
 };
 ```
 
-4. Run `yarn install`
-5. Run `yarn build`
+- Run `npm install`
 
-   5.1. You can also run `yarn build:site` to build just the preview site
+- Test your website locally by running: `npm start`.
 
-   5.2. Or run `yarn build:book` for the PDF and Epub files
+This will open a server on `http://localhost:8080` where you can preview the book as you write it.
 
-6. To get the .mobi file download the [Kindle Previewer](https://kdp.amazon.com/en_US/help/topic/G202131170) and drag your .epub file and it creates a kindle compatible file.
-7. Profit??
+When you are done you can run
+
+- Run `npm run build`
+
+> Important! For the build to work you need to have `npm start` running because that's how the PDF is built, it connects to the local server
+
+You can also build just the website with `npm run build:site` or just the book with `build:book`

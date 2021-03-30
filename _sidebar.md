@@ -1,6 +1,9 @@
-<!-- docs/_sidebar.md -->
-
 - [Home](/)
 - [Getting Started](getting-started.md)
+- [Building Mobi Files](/mobi)
 - [FAQ](/faq)
+  - [Editing CSS](/faq?id=how-can-i-edit-the-css)
+  - [Changing Code Blocks Theme](/faq?id=how-can-i-change-the-theme-in-the-code-blocks)
+  - [My chapters are not correct](/faq?id=the-chapters-are-screwed-up-in-my-version)
+  - [How can I add outline items to the PDF?](/faq?id=how-can-i-add-outline-items-to-the-pdf)
 - [Books using this Starter](/books-using)
