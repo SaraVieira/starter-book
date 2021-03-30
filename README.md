@@ -7,10 +7,10 @@ A starter built with gatsby to help you create books with ease.
 - 📚 Generates Epub file
 - 👩‍💻 Creates a preview site
 
-[PDF Light Example](./book/book-light.pdf)
+[PDF Light Example](https://github.com/SaraVieira/starter-book/blob/master/book/book-light.pdf)
 
-[PDF Dark Example](./book/book-dark.pdf)
+[PDF Dark Example](https://github.com/SaraVieira/starter-book/blob/master/book/book-dark.pdf)
 
-[Epub Example](./book/book.epub)
+[Epub Example](https://github.com/SaraVieira/starter-book/blob/master/book/book.epub)
 
 [Website Example](https://wizardly-snyder-c98440.netlify.com/) (add `?theme=dark` to preview dark version)
