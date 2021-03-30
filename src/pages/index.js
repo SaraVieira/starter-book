@@ -17,6 +17,7 @@ import "prism-theme-night-owl";
 import "./../styles/style.scss";
 import {
   imageRenderer,
+  absoluteImageRenderer,
   headingRenderer,
   RootRenderer,
   SmallRootRenderer,
@@ -55,7 +56,7 @@ const Index = ({ data, location }) => {
       ? {
           heading: headingRenderer,
           root: SmallRootRenderer,
-          image: imageRenderer,
+          image: absoluteImageRenderer,
         }
       : {
           code: codeBlock,
