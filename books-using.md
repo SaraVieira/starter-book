@@ -10,4 +10,8 @@
 
 ![useEffect By Example](./images/useEffect.png)
 
+### [Legacy Code: First Aid Kit](https://understandlegacycode.com/first-aid-kit/)
+
+![Legacy Code: First Aid Kit](./images/legacyCodeFirstAidKit.png)
+
 Please make a PR if you are using this starter in a book you wrote.
